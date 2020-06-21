@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+#define CURRENTYEAR 2020
+
+int main (void)
+{
+	int age, birth_year;
+
+	printf("Enter your birth year: ");
+	scanf("%d", &birth_year);
+
+	age = CURRENTYEAR - birth_year;
+
+	if ((age == 21) || (age <= 64))
+		printf("You are an adult but not a senior citizen!\n");
+	else if (age <= 20)
+		printf("You are not an adult yet!\n");
+	else
+		printf("You are a senior citizen\n");
+
+	return 0;
+	}
