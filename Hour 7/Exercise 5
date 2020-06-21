@@ -1,0 +1,26 @@
+#include <stdio.h>
+int array[6], x, number;
+
+int main( void )
+{
+    /* loop 6 times or until the last entered element is 99 */
+    for( x = 0; x < 6 && number != 99; x++ )
+    {
+        puts( "Enter an even integer value, or 99 to quit" );
+        scanf( "%d", &number );
+        while( number % 2 == 1 && number != 99)
+       {
+            printf( "\n%d is not even, please enter an even \
+                     number: ", number);
+            scanf( "%d", &number );
+       }
+       array[x] = number;
+    }
+    /* now print them out... */
+    for( x = 0; x < 6 && array[x] != 99; x++ )
+    {
+        printf( "\nThe value entered is %d", array[x] );
+    }
+
+    return 0;
+}
