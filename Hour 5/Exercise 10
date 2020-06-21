@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+float average(float a, float b, float c, float d, float e);
+
+int main (void)
+{
+	float a, b, c, d, e;
+
+	printf("Enter five float values: ");
+	scanf("%f %f %f %f %f", &a, &b, &c, &d, &e);
+
+	average(a, b, c, d, e);
+
+	return 0;
+}
+
+float average(float a, float b, float c, float d, float e)
+{
+	float answer;
+
+	answer = (a + b + c + d + e)/ 5;
+
+	printf("The average is %f.\n", answer);
+
+	return answer;
+}
