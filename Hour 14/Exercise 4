@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main (void)
+{
+	printf( "Jack asked, \"What is a backslash\?\"\nJill said, \
+	\"It is \'\\\'\"");
+
+	return 0;
+}
