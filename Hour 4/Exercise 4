@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main (void)
+{
+	int x, y = 10;
+
+	printf("Enter a value for x: ");
+	scanf("%d", &x);
+
+	if (x == 1 || x <= 20) 
+		printf("\ny is now equal to %d\n", x);
+		
+	else
+	printf("y has kept it's original value of %d\n", y);
+
+	return 0;
+}
