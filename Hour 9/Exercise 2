@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int cost = 100; //Direct access
+
+int *p_cost;
+
+int main (void)
+{
+	p_cost = &cost;
+	*p_cost = 100; //Indirect access
+
+	printf("%d\n", cost);
+	printf("%d\n", &cost);
+	printf("%d\n", *p_cost);
+	printf("%d\n", p_cost);
+
+	return 0;
+}
