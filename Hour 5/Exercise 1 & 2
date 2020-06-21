@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+//Exercise 1
+float do_it(char a, b, c);
+
+
+//Exercise 2
+void print_a_number(int a)
