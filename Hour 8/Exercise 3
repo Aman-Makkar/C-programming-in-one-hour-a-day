@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main (void)
+{
+	int eightyeight[88];
+	int a;
+
+	for (a = 0; a < 88; a++)
+	{
+		eightyeight[a] = 88;
+
+		printf("%d\n", eightyeight[a]);
+	}
+
+	return 0;
+}
