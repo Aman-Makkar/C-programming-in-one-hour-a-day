@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main (void)
+{
+	puts("Doesn't require a new line character.");
+	printf("New line character is required.\n");
+
+	return 0;
+}
