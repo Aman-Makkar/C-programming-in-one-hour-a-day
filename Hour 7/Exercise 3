@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main (void)
+{
+	int a;
+
+	puts("Enter an integer value: ");
+	scanf("%d", &a);
+
+	printf("The value you entered is: %d\n", a);
+
+	return 0;
+}
