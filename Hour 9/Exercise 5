@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+float radius = 10.2;
+float *p_radius = &radius;
+
+int main (void)
+{
+	printf("%f\n", p_radius);
+
+	return 0;
+}
