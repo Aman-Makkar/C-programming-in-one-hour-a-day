@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main (void)
+{
+	int a;
+
+	puts("Enter only even integer value: ");
+	scanf("%d", &a);
+
+	if (a % 2 == 0)
+		printf("The value you entered is: %d\n", a);
+
+	else
+		puts("Cannot accept odd numbers!");
+
+	return 0;
+}
