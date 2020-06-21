@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int var = 10;
+
+void print_func(void);
+
+int main (void)
+{
+	printf("%d\n", var);
+
+	print_func();
+
+	return 0;
+}
+
+void print_func(void)
+{
+	int var = 100;
+
+	printf("%d\n", var);
+}
