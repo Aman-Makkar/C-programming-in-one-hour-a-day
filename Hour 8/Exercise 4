@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main (void)
+{
+	int stuff [12][10];
+	int a, b;
+
+	for (a = 0; a < 12; a++)
+	{
+		for (b = 0; b < 10; b++)
+		{
+			stuff[a][b] = 0;
+		}
+	}
+
+	//Display the elements
+
+	for (a = 0; a < 12; a++)
+	{
+		for (b = 0; b < 10; b++)
+		{
+			printf("\nstuff[%d][%d] = ", a, b);
+			printf("%d", stuff[a][b]);
+		}
+	}
+
+	return 0;
+}
