@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+int main(void)
+{
+    char multi[12][12];
+
+    // The assignment says, use a pointer to the array.
+    // Our array holds characters, thus we need a pointer to char.
+    char *p;
+
+    // Assign where multi points to, as value of p.
+    // Now p points at the 1st element of multi, i.e. multi[0][0]
+    p = *multi;
+    int ctr1, ctr2;
+
+    for (ctr1 = 0; ctr1 < 12; ctr1++)
+    {
+        for (ctr2 = 0; ctr2 < 12; ctr2++)
+        {
+            if ((ctr2 % 2) == 0)
+            {
+                multi[ctr1][ctr2] = 'X';
+            }
+            else
+            {
+                multi[ctr1][ctr2] = ' ';
+            }
+
+        }
+    }
+
+    for (ctr1 = 0; ctr1 < 12; ctr1++)
+    {
+        for (ctr2 = 0; ctr2 < 12; ctr2++)
+        {
+          // Remember that * operator has higher priority than ++
+          printf("%c\t", *p++);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
