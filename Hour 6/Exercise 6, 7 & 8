@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main (void)
+{
+	int count;
+
+	//for (count = 1; count <= 100; count += 3)
+		//printf("%d\t", count);
+
+	/*count = 1;
+
+	while (count <= 100)
+	{
+		printf("%d\t", count);
+		count += 3;
+	}*/
+
+	count = 1;
+
+	do
+	{
+		printf("%d\t", count);
+		count += 3;
+	} while (count <= 100);
+
+	return 0;
+}
