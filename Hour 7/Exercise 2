@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main (void)
+{
+	char c, e;
+	unsigned int d;
+
+	puts("Enter a character, an unsigned decimal integer abd another single character: ");
+	scanf("%c %u %c", &c, &d, &e);
+
+	printf("The first character is: %c, the unsigned integer is: %d and second character is: %c\n",
+		c, d, e);
+
+	return 0;
+}
