@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int data[10];
+
+int main (void)
+{
+	data[2] = 100;
+	*(data+2) = 100;
+
+	return 0;
+}
