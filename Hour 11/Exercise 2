@@ -1,0 +1,7 @@
+struct data {
+	int a;
+	float b;
+	float c;
+	//Exercise 6
+	char e[21];
+} info;
