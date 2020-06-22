@@ -1,0 +1,7 @@
+typedef struct {
+    char address1[31];
+    char address2[31];
+    char city[11];
+    char state[3];
+    char zip[11];
+} RECORD;
