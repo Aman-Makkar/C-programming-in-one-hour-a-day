@@ -1,0 +1,7 @@
+struct data *p_data;
+
+p_data = &info;
+
+//Exercise 5
+(*p_data).b = 5.5;
+p_data->b = 5.5;
